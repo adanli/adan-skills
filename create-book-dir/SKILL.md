@@ -1,0 +1,15 @@
+---
+name: create-book-dir
+description: 管理书单，包括对书单目录的检查、创建、查询
+version: 0.6
+---
+
+# 管理书单目录
+
+本技能用于对书单目录的管理，包括存在书单文件的目录的创建，目录查询，以及检查该目录是否存在
+
+## 核心职责
+
+1. 如果用户指定了书单目录，则后续流程按指定的目录执行，否则设置默认的目录，linux的默认地址为/root/${user}/book_doc, mac的默认地址为/Users/{user}/book_doc, windows的默认地址为D:/book_doc，将其作为ROOT_BOOK_PATH
+1. 检查ROOT_BOOK_PATH这个目录是否存在，如果不存在，则帮我创建该目录
+1. 返回ROOT_BOOK_PATH的目录给到用户
