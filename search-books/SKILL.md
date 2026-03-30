@@ -13,5 +13,5 @@ version: 1.0
 ## 工作流程
 
 1. 调用create-book-dir技能，获取书单目录，将其作为ROOT_BOOK_PATH
-2. 访问ROOT_BOOK_PATH/to_read.md，返回文件中提到的书籍列表，如果这个文件不存在，询问我是否要创建书单
+2. 访问ROOT_BOOK_PATH/references/to_read.md，返回文件中提到的书籍列表，如果这个文件不存在，询问我是否要创建书单
 3. 如果回答需要创建书单，调用技能add-book

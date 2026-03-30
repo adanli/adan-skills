@@ -10,6 +10,7 @@ version: 0.6
 
 ## 核心职责
 
-1. 如果用户指定了书单目录，则后续流程按指定的目录执行，否则设置默认的目录，linux的默认地址为/root/${user}/book_doc, mac的默认地址为/Users/{user}/book_doc, windows的默认地址为D:/book_doc，将其作为ROOT_BOOK_PATH
+1. 如果用户指定了书单目录，则后续流程按指定的目录执行，否则设置默认的目录，默认地址为工作区根目录下的book_doc目录，将其作为ROOT_BOOK_PATH
 1. 检查ROOT_BOOK_PATH这个目录是否存在，如果不存在，则帮我创建该目录
 1. 返回ROOT_BOOK_PATH的目录给到用户
+
